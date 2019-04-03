@@ -4,25 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Cat energy</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <header class="page-header">
         <a href="page-header__logo">
-            <img class="page-header__logo--image" src="#" width="202" height="59" alt="Логотип Cat energy">
+            <img class="page-header__logo--image" src="img/logo-desktop.svg" width="202" height="59" alt="Логотип Cat energy">
         </a>
         <nav class="main-nav">
             <button class="main-nav__toggle" type="button">Открыть меню</button>
-            <ul class="main-nav__list site-list">
-                <li class="site-list__item ">
-                    <a href="index.html">Главная</a>
+            <ul class="main-nav__list ">
+                <li class="main-nav__item ">
+                    <a class="main-nav__link" href="index.html">Главная</a>
                 </li>
-                <li class="site-list__item site-list__item--active">
-                    <a href="catalog.html">Каталог продукции</a>
+                <li class="main-nav__item">
+                    <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
                 </li>
-                <li class="site-list__item ">
-                    <a href="form.html">Подбор программы</a>
+                <li class="main-nav__item main-nav__item--active ">
+                    <a class="main-nav__link" href="#">Подбор программы</a>
                 </li>
             </ul>
         </nav>
@@ -33,7 +34,7 @@
         <h1 class="visually-hidden">Cat Energy</h1>
 
         <section class="programm">
-            <h2 class="programm__title">Подбор программы</h2>
+            <h2 class="title programm__title">Подбор программы</h2>
             <p class="programm__subtitle">Заполните анкету и мы подберем <br> программу питания для вашего кота</p>
             <form class="programm__form" action="https://echo.htmlacademy.ru" method="GET">
                 <fieldset class="programm__data">
@@ -59,18 +60,18 @@
                     </label>
                 </fieldset>
                 <fieldset class="programm__contacts">
-                    <legend class="programm__legend">Контактные данные (владельца кота)</legend>
+                    <legend class="subtitle programm__legend">Контактные данные (владельца кота)</legend>
                     <label for="email">E-mail:*</label>
                     <input class="programm__input programm__contacts-email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
                     <label for="phone">Телефон:*</label>
                     <input class="programm__input programm__contacts-phone" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90">
                 </fieldset>
                 <fieldset class="programm__comment">
-                    <label class="programm__legend" for="comment">Комментарий</label>
+                    <label class="subtitle programm__legend" for="comment">Комментарий</label>
                     <textarea class="programm__input" name="comment" id="comment" cols="20" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
                 </fieldset>
                 <fieldset class="programm__additional">
-                    <legend class="programm__legend">Дополнительно</legend>
+                    <legend class="subtitle programm__legend">Дополнительно</legend>
                     <label class="programm__additional-checkbox">
                         <input type="checkbox" name="additional" value="sugar-substitute" checked>
                         <span class="programm__additional-checkbox-label">Сахарозаменитель</span>
@@ -107,7 +108,7 @@
     <footer class="page-footer">
         <h2 class="visually-hidden">Наши социальные сети</h2>
         <div class="page-footer__wrapper">
-            <img class="page-footer__logo" src="#" alt="Логотип Cat energy">
+            <img class="page-footer__logo" src="img/logo-footer.svg" width="128" height="23" alt="Логотип Cat energy">
             <ul class="social__list">
                 <li class="social__item">
                     <a class="social__link social__link--vkontakte" href="#">

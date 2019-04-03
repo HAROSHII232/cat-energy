@@ -1,0 +1,16 @@
+.programms {
+    &__losing-weight,
+    &__weight-gain {
+        background: $grey;
+    }
+    &__subtitle {
+        text-transform: uppercase;
+    }
+    &__description {
+        font: $desc;
+    }
+    &__link {
+        color: $black;
+        text-transform: uppercase;
+    }
+}

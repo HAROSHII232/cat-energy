@@ -1,0 +1,13 @@
+.main-nav {
+    display: flex;
+    &__link {
+        display: block;
+        padding: 15px 40px;
+        color: $black;
+        text-transform: uppercase;
+    }
+    &--index {
+        color: $white;
+        background: url(../../../img/index-background-desktop@1x.jpg) no-repeat;
+    }
+}

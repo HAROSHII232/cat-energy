@@ -1,0 +1,16 @@
+.additional-goods {
+    &__name {
+        text-transform: uppercase;
+    }
+    &__value,
+    &__price {
+        font: normal 16px/20px $arial;
+    }
+    &__gift {
+        background: url(../../../img/gift-photo-desktop@1x.jpg) center center no-repeat;
+        &-text {
+            font: normal 16px/20px $arial;
+            color: $white;
+        }
+    }
+}

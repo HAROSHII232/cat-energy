@@ -1,0 +1,16 @@
+.page-footer {
+    background: $grey;
+    &__copyright {
+        font: normal 16px/16px $arial;
+        color: $darkgrey;
+        position: relative;
+        &:after {
+            content: '';
+            width: 27px;
+            height: 34px;
+            position: absolute;
+            background: url(../../../img/logo-htmlacademy.svg);
+            opacity: 0.5;
+        }
+    }
+}
