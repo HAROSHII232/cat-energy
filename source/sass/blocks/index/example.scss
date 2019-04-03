@@ -1,0 +1,25 @@
+.example {
+    background: $grey;
+    &__description {
+        font: $desc;
+    }
+    &__cost {
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+}
+
+.achivment {
+    &__value {
+        font-size: 30px;
+        line-height: 37px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    &__title {
+        font-family: $arial;
+        font-size: 14px;
+        line-height: 14px;
+        color: $darkgrey;
+    }
+}

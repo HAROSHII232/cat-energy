@@ -1,0 +1,8 @@
+.button {
+    background: $green;
+    color: $white;
+    text-transform: uppercase;
+    &__intro {
+        padding: 15px 30px;
+    }
+}

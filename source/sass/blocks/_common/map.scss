@@ -1,0 +1,10 @@
+.map__adress {
+    &-title {
+        text-transform: uppercase;
+        font-weight: normal;
+    }
+    &-street,
+    &-city {
+        font: $desc;
+    }
+}

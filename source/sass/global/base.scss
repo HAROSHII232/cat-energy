@@ -1,0 +1,41 @@
+html,
+body {
+    font-family: $regular;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+fieldset {
+    border: 0;
+}
+
+// h1,
+// h2,
+// h3,
+// p {
+//     margin: 0
+// }

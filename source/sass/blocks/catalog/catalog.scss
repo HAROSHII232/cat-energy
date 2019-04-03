@@ -1,0 +1,29 @@
+.catalog {
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item {
+        background: $grey;
+        display: flex;
+        flex-direction: column;
+        &-name {
+            font: normal 20px/20px $regular;
+            text-transform: uppercase;
+        }
+        &-description {
+            font: normal 16px/16px $arial;
+            color: $darkgrey;
+        }
+        &-button {
+            font: normal 16px/20px $regular;
+            padding: 15px 55px;
+            margin-top: 30px;
+        }
+        &-text {
+            font: normal 16px/16px $arial;
+            color: $darkgrey;
+        }
+    }
+}
