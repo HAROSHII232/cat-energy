@@ -1,13 +1,12 @@
 .main-nav {
-    display: flex;
+    &__list {
+        display: flex;
+        justify-content: flex-end;
+    }
     &__link {
         display: block;
-        padding: 15px 40px;
-        color: $black;
-        text-transform: uppercase;
-    }
-    &--index {
+        padding: 15px 0 15px 40px;
         color: $white;
-        background: url(../../../img/index-background-desktop@1x.jpg) no-repeat;
+        text-transform: uppercase;
     }
 }
