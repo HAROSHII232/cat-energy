@@ -1,16 +1,47 @@
 .page-footer {
     background: $grey;
+    padding: 60px 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     &__copyright {
         font: normal 16px/16px $arial;
         color: $darkgrey;
         position: relative;
+        padding-right: 40px;
         &:after {
             content: '';
             width: 27px;
             height: 34px;
             position: absolute;
+            right: 0;
+            top: -5px;
             background: url(../../../img/logo-htmlacademy.svg);
             opacity: 0.5;
         }
+    }
+}
+
+.social__list {
+    display: flex;
+    width: 125px;
+    justify-content: space-between;
+}
+
+.social__link {
+    display: block;
+    width: 30px;
+    height: 22px;
+    opacity: 0.5;
+    &--vk {
+        background: url(../../../img/icon-vk-mobile.svg) center center no-repeat;
+    }
+    &--instagram {
+        background: url(../../../img/icon-insta-mobile.svg) center center no-repeat;
+    }
+    &--facebook {
+        background: url(../../../img/icon-fb-mobile.svg) center center no-repeat;
     }
 }

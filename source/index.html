@@ -12,7 +12,7 @@
 <body>
 
     <header class="page-header page-header--index">
-        <div class="page-header__wrapper">
+        <div class="container page-header__wrapper">
             <a href="page-header__logo">
                 <img class="page-header__logo--image" src="img/logo-desktop.svg" width="202" height="59" alt="Логотип Cat energy">
             </a>
@@ -32,7 +32,7 @@
             </nav>
         </div>
         <section class="intro">
-            <div class="intro__wrapper">
+            <div class="container intro__wrapper">
                 <div class="intro__wrapper--text">
                     <h1 class="title intro__title">Функциональное <br> питание для котов</h1>
                     <span class="intro__subtitle">Занялся собой? Займись котом!</span>
@@ -45,89 +45,104 @@
 
     <main class="page-main">
 
-
         <section class="programms">
             <h2 class="visually-hidden">Наши программы для котов</h2>
-            <div class="programms__losing-weight">
-                <img class="programms__image programms__image--skinny" src="img/icon-cat-slim.svg" width="100" height="100" alt="Кот сидит и худеет">
-                <h3 class="subtitle programms__subtitle">Похудение</h3>
-                <p class="programms__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-                <a class="programms__link" href="#">Каталог Slim</a>
-            </div>
-            <div class="programms__weight-gain">
-                <img class="programms__image programms__image--fat" src="img/icon-cat-pro.svg" width="130" height="100" alt="Кот идет и толстеет">
-                <h3 class="subtitle programms__subtitle">Набор Массы </h3>
-                <p class="programms__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-                <a class="programms__link" href="#">Каталог Pro</a>
+            <div class="container programms__wrapper">
+                <div class="programms__losing-weight">
+                    <div class="programms__head">
+                        <span class="programms__image programms__image--skinny"></span>
+                        <h3 class="subtitle programms__subtitle">Похудение</h3>
+                    </div>
+                    <p class="programms__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+                    <a class="programms__link" href="#">Каталог Slim</a>
+                </div>
+                <div class="programms__weight-gain">
+                    <div class="programms__head">
+                        <span class="programms__image programms__image--fat"></span>
+                        <h3 class="subtitle programms__subtitle">Набор Массы </h3>
+                    </div>
+                    <p class="programms__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+                    <a class="programms__link" href="#">Каталог Pro</a>
+                </div>
             </div>
         </section>
 
         <section class="advantages">
-            <h2 class="title advantages__title">Как это работает</h2>
-            <ul class="advantages__list">
-                <li class="advantages__item advantages__item--functional">
-                    <span class="advantages__number">1</span>
-                    <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
-                </li>
-                <li class="advantages__item advantages__item--powder">
-                    <span class="advantages__number">2</span>
-                    <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-                </li>
-                <li class="advantages__item advantages__item--meal">
-                    <span class="advantages__number">3</span>
-                    <p class="advantages__description">Замените один-два приема обычной еды на наше фунцкциональное питание.</p>
-                </li>
-                <li class="advantages__item advantages__item--schedule">
-                    <span class="advantages__number">4</span>
-                    <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
-                </li>
-            </ul>
+            <div class="container">
+                <h2 class="title advantages__title">Как это работает</h2>
+                <ul class="advantages__list">
+                    <li class="advantages__item advantages__item--functional">
+                        <span class="advantages__number">1</span>
+                        <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
+                    </li>
+                    <li class="advantages__item advantages__item--powder">
+                        <span class="advantages__number">2</span>
+                        <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+                    </li>
+                    <li class="advantages__item advantages__item--meal">
+                        <span class="advantages__number">3</span>
+                        <p class="advantages__description">Замените один-два приема обычной еды на наше фунцкциональное питание.</p>
+                    </li>
+                    <li class="advantages__item advantages__item--schedule">
+                        <span class="advantages__number">4</span>
+                        <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <section class="example">
-            <h2 class=" title example__title">Живой пример</h2>
-            <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-            <div class="example__achivments">
-                <dl class="achivment">
-                    <dd class="achivment__value">5 кг</dd>
-                    <dt class="achivment__title">снижение веса</dt>
-                </dl>
-                <dl class="achivment">
-                    <dd class="achivment__value">60 дней</dd>
-                    <dt class="achivment__title">затрачено времени</dt>
-                </dl>
-            </div>
-            <p class="example__cost">Затраты на питание: <span class="example__cost-amount">15 000 руб.</span></p>
-            <div class="example__slider">
-                <div class="slider__images">
-                    <div class="slider__image slider__image--before">
-                        <img src="#" alt="Толстый кот">
+            <div class="container">
+                <div class="example__content">
+                    <h2 class=" title example__title">Живой пример</h2>
+                    <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+                    <div class="example__achivments">
+                        <dl class="achivment">
+                            <dd class="achivment__value">5 кг</dd>
+                            <dt class="achivment__title">снижение веса</dt>
+                        </dl>
+                        <dl class="achivment">
+                            <dd class="achivment__value">60 дней</dd>
+                            <dt class="achivment__title">затрачено времени</dt>
+                        </dl>
                     </div>
-                    <div class="slider__image slider__image--after">
-                        <img src="#" alt="Худой кот">
-                    </div>
+                    <p class="example__cost">Затраты на питание: <span class="example__cost-amount">15 000 руб.</span></p>
                 </div>
-                <!-- добавить ползунок -->
+                <div class="slider">
+                    <div class="slider__images">
+                        <div class="slider__image slider__image--before">
+                        </div>
+                        <div class="slider__image slider__image--after">
+                        </div>
+                    </div>
+                    <!-- добавить ползунок -->
+                </div>
             </div>
         </section>
 
         <section class="map">
             <h2 class="visually-hidden">Карта</h2>
-            <div class="map__adress-container">
-                <h3 class="map__adress-title">приглашаем к сотрудничеству дилеров!</h3>
-                <span class="map__adress-street">ул. Большая Конюшенная, д. 19/8 </span>
-                <span class="map__adress-city">Санкт-Петербург</span>
+            <div class="container">
+                <div class="map__adress-container">
+                    <h3 class="map__adress-title">приглашаем к сотрудничеству дилеров!</h3>
+                    <div class="map__adress-wrapper">
+                        <span class="map__adress-street">ул. Большая Конюшенная, д. 19/8 </span>
+                        <span class="map__adress-city">Санкт-Петербург</span>
+                    </div>
+                </div>
             </div>
+            <iframe class="map__img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5822424241144!2d30.319674632358048!3d59.939073960168656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2z0JTQvtGF0L7QtNC90YvQuSDQtNC-0Lwg0J0uINCQLiDQnNC10LvRjNGG0LXRgNCw!5e0!3m2!1sru!2sby!4v1555358884155!5m2!1sru!2sby"
+                width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
         </section>
     </main>
 
     <footer class="page-footer">
         <h2 class="visually-hidden">Наши социальные сети</h2>
-        <div class="page-footer__wrapper">
+        <div class="container">
             <img class="page-footer__logo" src="img/logo-footer.svg" width="128" height="23" alt="Логотип Cat energy">
             <ul class="social__list">
                 <li class="social__item">
-                    <a class="social__link social__link--vkontakte" href="#">
+                    <a class="social__link social__link--vk" href="#">
                         <span class="visually-hidden ">Мы Вконтакте</span>
                     </a>
                 </li>

@@ -1,7 +1,27 @@
+.map {
+    position: relative;
+    padding: 100px 0;
+    &__img {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
 .map__adress {
+    &-container {
+        display: flex;
+        position: relative;
+        z-index: 1;
+        align-items: center;
+        width: 570px;
+        box-sizing: border-box;
+        padding: 70px 80px;
+        background: $white;
+    }
     &-title {
         text-transform: uppercase;
         font-weight: normal;
+        line-height: 25px;
     }
     &-street,
     &-city {

@@ -1,7 +1,28 @@
 .programms {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
     &__losing-weight,
     &__weight-gain {
+        width: 570px;
+        padding: 50px 55px;
         background: $grey;
+    }
+    &__losing-weight {
+        margin-right: 80px;
+    }
+    &__head {
+        display: flex;
+    }
+    &__image {
+        width: 100px;
+        height: 100px;
+        background: $green;
+        border-radius: 50%;
+        margin-right: 65px;
     }
     &__subtitle {
         text-transform: uppercase;

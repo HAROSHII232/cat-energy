@@ -1,7 +1,22 @@
 .example {
     background: $grey;
+    padding-bottom: 75px;
+    .container {
+        display: flex;
+    }
+    &__content {
+        width: 430px;
+    }
+    &__title {
+        margin: 0;
+        position: relative;
+        top: -140px;
+    }
     &__description {
         font: $desc;
+    }
+    &__achivments {
+        display: flex;
     }
     &__cost {
         text-transform: uppercase;
@@ -10,6 +25,9 @@
 }
 
 .achivment {
+    width: 160px;
+    margin-right: 40px;
+    border: 1px solid #cdcdcd;
     &__value {
         font-size: 30px;
         line-height: 37px;
@@ -21,5 +39,12 @@
         font-size: 14px;
         line-height: 14px;
         color: $darkgrey;
+        text-align: center;
+    }
+}
+
+.slider {
+    &__images {
+        width: 650xp;
     }
 }
