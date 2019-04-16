@@ -1,11 +1,20 @@
 .example {
     background: $grey;
     padding-bottom: 75px;
+    @include tablet {
+        background: $white;
+    }
     .container {
         display: flex;
+        @include tablet {
+            flex-direction: column;
+        }
     }
     &__content {
         width: 430px;
+        @include tablet {
+            width: auto;
+        }
     }
     &__title {
         margin: 0;
@@ -44,6 +53,10 @@
 }
 
 .slider {
+    @include tablet {
+        background: $grey;
+        min-height: 460px;
+    }
     &__images {
         width: 650xp;
     }

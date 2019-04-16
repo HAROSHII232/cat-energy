@@ -1,9 +1,17 @@
 .map {
     position: relative;
     padding: 100px 0;
+    @include tablet {
+        padding: 0px;
+    }
     &__img {
         position: absolute;
         bottom: 0;
+        @include tablet {
+            margin-top: 60px;
+            position: static;
+            min-height: 400px;
+        }
     }
 }
 
@@ -17,6 +25,19 @@
         box-sizing: border-box;
         padding: 70px 80px;
         background: $white;
+        @include tablet {
+            width: auto;
+            justify-content: space-between;
+            padding: 0px;
+            margin: 0px;
+        }
+    }
+    &-wrapper {
+        @include tablet {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
     }
     &-title {
         text-transform: uppercase;

@@ -1,6 +1,7 @@
 .programms {
     &__wrapper {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         padding-top: 80px;
         padding-bottom: 80px;
@@ -13,6 +14,9 @@
     }
     &__losing-weight {
         margin-right: 80px;
+        @include tablet {
+            margin: 0px 0px 30px;
+        }
     }
     &__head {
         display: flex;

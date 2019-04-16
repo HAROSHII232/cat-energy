@@ -2,6 +2,9 @@
     &__wrapper {
         display: flex;
         color: $black;
+        @include tablet {
+            flex-direction: column;
+        }
         &--text {
             display: flex;
             flex-direction: column;
@@ -17,5 +20,11 @@
     }
     &__subtitle {
         text-transform: uppercase;
+    }
+}
+
+@include tablet {
+    .intro__image {
+        justify-content: center;
     }
 }

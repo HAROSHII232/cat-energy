@@ -20,6 +20,9 @@
             z-index: -1;
             background: url(../../../img/index-background-desktop@1x.jpg) left center no-repeat;
             background-size: cover;
+            @include tablet {
+                display: none;
+            }
         }
     }
 }

@@ -2,11 +2,18 @@
     &__list {
         display: flex;
         justify-content: flex-end;
+        @include tablet {
+            justify-content: space-between;
+        }
     }
     &__link {
         display: block;
         padding: 15px 0 15px 40px;
         color: $white;
         text-transform: uppercase;
+        @include tablet {
+            color: $black;
+            padding-left: 20px;
+        }
     }
 }
