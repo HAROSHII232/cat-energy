@@ -5,6 +5,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include mobile {
+            flex-direction: column;
+        }
     }
     &__copyright {
         font: normal 16px/16px $arial;
@@ -28,6 +31,9 @@
     display: flex;
     width: 125px;
     justify-content: space-between;
+    @include mobile {
+        margin: 45px 0;
+    }
 }
 
 .social__link {

@@ -5,6 +5,9 @@
         justify-content: space-between;
         align-items: center;
         padding-top: 52px;
+        @include mobile {
+            padding: 0px;
+        }
     }
     &--index {
         position: relative;

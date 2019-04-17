@@ -61,3 +61,54 @@
         width: 650xp;
     }
 }
+
+@include tablet {
+    .example {
+        &__row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+@include mobile {
+    .example {
+        background: $grey;
+        padding-bottom: 0;
+        &__title {
+            position: static;
+            margin: 35px 0;
+        }
+        &__description {
+            font-size: 14px;
+            line-height: 18px;
+            color: $darkgrey;
+        }
+        &__row {
+            flex-direction: column;
+            align-items: stretch
+        }
+        &__achivments {
+            justify-content: space-between;
+        }
+        &__cost {
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+        }
+    }
+    .achivment {
+        margin-right: 0px;
+        &__value {
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+    .achivment+.achivment {
+        margin-left: 20px;
+    }
+    .slider {
+        min-height: 380px;
+    }
+}

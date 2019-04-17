@@ -12,6 +12,10 @@
             position: static;
             min-height: 400px;
         }
+        @include mobile {
+            margin-top: 30px;
+            min-height: 360px;
+        }
     }
 }
 
@@ -33,19 +37,25 @@
         }
     }
     &-wrapper {
+        font: $desc;
         @include tablet {
             display: flex;
             flex-wrap: wrap;
             justify-content: flex-end;
+        }
+        @include mobile {
+            font-size: 14px;
+            line-height: 20px;
+            justify-content: flex-start;
         }
     }
     &-title {
         text-transform: uppercase;
         font-weight: normal;
         line-height: 25px;
-    }
-    &-street,
-    &-city {
-        font: $desc;
+        @include mobile {
+            font-size: 16px;
+            line-height: 20px;
+        }
     }
 }

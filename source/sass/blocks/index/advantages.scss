@@ -12,3 +12,23 @@
         font: $desc;
     }
 }
+
+@include mobile {
+    .advantages {
+        margin-bottom: 40px;
+        &__title {
+            margin: 0 0 40px;
+        }
+        &__item {
+            width: 100%;
+        }
+        &__number {
+            display: none;
+        }
+        &__description {
+            font-size: 14px;
+            padding-left: 80px;
+            line-height: 18px;
+        }
+    }
+}

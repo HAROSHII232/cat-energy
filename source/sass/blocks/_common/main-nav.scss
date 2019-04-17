@@ -5,6 +5,9 @@
         @include tablet {
             justify-content: space-between;
         }
+        @include mobile {
+            display: none;
+        }
     }
     &__link {
         display: block;
