@@ -12,8 +12,11 @@
     &__link {
         display: block;
         padding: 15px 0 15px 40px;
-        color: $white;
         text-transform: uppercase;
+        color: $black;
+        &--index {
+            color: $white;
+        }
         @include tablet {
             color: $black;
             padding-left: 20px;

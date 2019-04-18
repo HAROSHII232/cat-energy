@@ -5,25 +5,48 @@
         flex-wrap: wrap;
     }
     &__item {
-        background: $grey;
         display: flex;
         flex-direction: column;
+        box-sizing: border-box;
+        width: 245px;
+        padding: 165px 43px 40px;
+        margin-top: 145px;
+        background: $grey;
+        @include tablet {
+            width: 324px;
+        }
         &-name {
             font: normal 20px/20px $regular;
             text-transform: uppercase;
+            text-align: center;
         }
         &-description {
             font: normal 16px/16px $arial;
             color: $darkgrey;
+            &--row {
+                display: flex;
+                justify-content: space-between;
+            }
         }
         &-button {
             font: normal 16px/20px $regular;
             padding: 15px 55px;
             margin-top: 30px;
+            &--show {
+                color: $darkgrey;
+                padding: 15px 33px;
+                background: $grey;
+            }
         }
         &-text {
             font: normal 16px/16px $arial;
             color: $darkgrey;
+        }
+        &-other {
+            text-align: center;
+            align-items: center;
+            background: $white;
+            border: 1px solid #ededed;
         }
     }
 }
