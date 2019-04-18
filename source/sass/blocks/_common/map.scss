@@ -1,6 +1,11 @@
 .map {
     position: relative;
     padding: 100px 0;
+    &--catalog {
+        @include mobile {
+            background: $grey;
+        }
+    }
     @include tablet {
         padding: 0px;
     }
@@ -34,6 +39,11 @@
             justify-content: space-between;
             padding: 0px;
             margin: 0px;
+        }
+        &--catalog {
+            @include mobile {
+                background: $grey;
+            }
         }
     }
     &-wrapper {

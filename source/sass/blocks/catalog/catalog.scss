@@ -15,14 +15,33 @@
         @include tablet {
             width: 324px;
         }
+        @include mobile {
+            background: $white;
+            padding: 0;
+            margin: 0 0 25px 0;
+        }
         &-name {
             font: normal 20px/20px $regular;
             text-transform: uppercase;
             text-align: center;
+            @include mobile {
+                text-align: left;
+                font-size: 16px;
+                padding: 0 65px 0 140px;
+            }
+        }
+        &-name:last-child {
+            @include mobile {
+                padding: 0;
+            }
         }
         &-description {
             font: normal 16px/16px $arial;
             color: $darkgrey;
+            @include mobile {
+                font-size: 12px;
+                padding-left: 137px;
+            }
             &--row {
                 display: flex;
                 justify-content: space-between;
@@ -36,6 +55,9 @@
                 color: $darkgrey;
                 padding: 15px 33px;
                 background: $grey;
+                @include mobile {
+                    width: 100%;
+                }
             }
         }
         &-text {
@@ -47,6 +69,11 @@
             align-items: center;
             background: $white;
             border: 1px solid #ededed;
+            .catalog__item-name {
+                @include mobile {
+                    padding: 80px 0 0 0;
+                }
+            }
         }
     }
 }

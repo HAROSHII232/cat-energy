@@ -1,5 +1,8 @@
 .additional-goods {
     margin-bottom: 90px;
+    @include mobile {
+        margin-bottom: 0px;
+    }
     &__content {
         display: flex;
         justify-content: space-between;
@@ -44,6 +47,15 @@
         width: 245px;
         padding-top: 190px;
         background: url(../../../img/gift-photo-desktop@1x.jpg) center center no-repeat;
+        @include tablet {
+            width: 100%;
+            padding-top: 0;
+            background: url(../../../img/gift-photo-tablet@1x.jpg) center center no-repeat;
+        }
+        @include mobile {
+            background: url(../../../img/gift-photo-mobile@1x.jpg) center center no-repeat;
+            min-height: 290px;
+        }
         &-text {
             font: normal 16px/20px $arial;
             color: $white;
@@ -55,11 +67,11 @@
                 min-height: 200px;
                 padding-left: 420px;
             }
-        }
-        @include tablet {
-            width: 100%;
-            padding-top: 0;
-            background: url(../../../img/gift-photo-tablet@1x.jpg) center center no-repeat;
+            @include mobile {
+                margin-top: 190px;
+                padding-left: 53px;
+                text-align: center;
+            }
         }
     }
     &__button {
@@ -68,6 +80,9 @@
         padding: 15px 95px;
         @include tablet {
             padding: 13px 320px;
+        }
+        @include mobile {
+            padding: 13px 110px;
         }
     }
 }
