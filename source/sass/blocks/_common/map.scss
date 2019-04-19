@@ -1,7 +1,7 @@
 .map {
     position: relative;
     padding: 100px 0;
-    &--catalog {
+    &--grey {
         @include mobile {
             background: $grey;
         }
@@ -40,7 +40,7 @@
             padding: 0px;
             margin: 0px;
         }
-        &--catalog {
+        &--grey {
             @include mobile {
                 background: $grey;
             }
