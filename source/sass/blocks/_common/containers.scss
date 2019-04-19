@@ -8,6 +8,12 @@
         width: $tablet-width;
         padding: 0 $tablet-pads;
     }
+    &__form--tablet {
+        @include tablet {
+            width: $tablet-width;
+            padding: 0 $tablet-pads + 40px;
+        }
+    }
     @include mobile {
         width: $mobile-width;
         min-width: $mobile-width;
