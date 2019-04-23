@@ -12,6 +12,28 @@
             background: $black;
             box-shadow: 0 6px 0 0 $black, 0 12px 0 0 $black;
         }
+        &--closed .main-nav__list {
+            display: none;
+        }
+        &--opened .main-nav__list {
+            display: block;
+        }
+        &--opened .main-nav__toggle::before,
+        &--opened .main-nav__toggle::after {
+            content: "";
+            position: absolute;
+            top: 30px;
+            left: 14px;
+            width: 24px;
+            height: 2px;
+            background: $black;
+        }
+        &--opened .main-nav__toggle::before {
+            transform: rotate(45deg);
+        }
+        &--opened .main-nav__toggle::after {
+            transform: rotate(-45deg);
+        }
     }
     &__toggle {
         display: none;

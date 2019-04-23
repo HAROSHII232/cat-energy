@@ -9,6 +9,8 @@
         padding: 15px 30px;
         @include mobile {
             width: 100%;
+            font-size: 14px;
+            line-height: 18px;
         }
     }
 }

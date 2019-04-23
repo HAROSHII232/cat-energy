@@ -59,10 +59,40 @@
         @include mobile {
             font-size: 14px;
             line-height: 18px;
+            margin: 0;
+            padding: 24px 0;
+            border-bottom: 1px solid #d9d9d9;
         }
     }
     &__link {
+        display: flex;
+        align-items: center;
         color: $black;
         text-transform: uppercase;
+        &::before {
+            content: "";
+            width: 19px;
+            height: 3px;
+            background: $darkgrey;
+            margin-left: 10px;
+            order: 1;
+            transition: all 0.2s ease-out;
+        }
+        &::after {
+            content: "";
+            order: 2;
+            border: 5.5px solid transparent;
+            border-left-color: $darkgrey;
+        }
+        &:hover::before {
+            width: 27px;
+        }
+        &:active {
+            opacity: 0.3;
+            transition: none;
+        }
+        @include mobile {
+            margin-top: 20px;
+        }
     }
 }
