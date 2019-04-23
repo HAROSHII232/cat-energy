@@ -1,4 +1,33 @@
 .main-nav {
+    @include mobile {
+        width: 320px;
+        margin: 0 auto;
+        &--closed .main-nav__toggle::before {
+            content: "";
+            position: absolute;
+            top: 25px;
+            left: 14px;
+            width: 24px;
+            height: 2px;
+            background: $black;
+            box-shadow: 0 6px 0 0 $black, 0 12px 0 0 $black;
+        }
+    }
+    &__toggle {
+        display: none;
+        @include mobile {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            display: block;
+            width: 60px;
+            height: 60px;
+            margin: 0;
+            padding: 32px;
+            background: $white;
+            border: 0;
+        }
+    }
     &__list {
         display: flex;
         justify-content: flex-end;
@@ -6,7 +35,18 @@
             justify-content: space-between;
         }
         @include mobile {
-            display: none;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    &__item {
+        @include mobile {
+            border-bottom: 1px solid #e6e6e6;
+        }
+    }
+    &__item:first-child {
+        @include mobile {
+            border-top: 1px solid #e6e6e6;
         }
     }
     &__link {
@@ -14,12 +54,51 @@
         padding: 15px 0 15px 40px;
         text-transform: uppercase;
         color: $black;
+        font-weight: 400;
         &--index {
             color: $white;
         }
         @include tablet {
             color: $black;
             padding-left: 20px;
+        }
+        @include mobile {
+            padding: 20px;
+        }
+        &:hover {
+            opacity: 0.6;
+        }
+        &:active {
+            opacity: 0.3;
+        }
+    }
+    &__item--active {
+        position: relative;
+        &::before {
+            content: '';
+            width: 68px;
+            height: 2px;
+            background: $white;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            @include mobile {
+                display: none;
+            }
+        }
+        a:hover {
+            opacity: 1;
+        }
+        @include tablet {
+            &::before {
+                content: '';
+                width: 62px;
+                height: 2px;
+                background: $green;
+                position: absolute;
+                right: 5px;
+                bottom: 0;
+            }
         }
     }
 }

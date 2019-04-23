@@ -1,12 +1,36 @@
 .page-header {
     background: $white;
+    @include mobile {
+        width: 100%;
+    }
     &__wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-top: 52px;
+        @include tablet {
+            padding-top: 24px;
+        }
         @include mobile {
-            padding: 0px;
+            padding: 10px 0 0 0;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            &::after {
+                content: url(../../../img/logo-footer.svg);
+                width: 101px;
+                height: 18px;
+                position: absolute;
+                top: 22px;
+                left: 50%;
+                margin-left: -50px;
+            }
+        }
+        a {
+            @include mobile {
+                align-self: flex-start;
+                padding-bottom: 17px;
+            }
         }
     }
     &--index {
@@ -26,6 +50,24 @@
             @include tablet {
                 display: none;
             }
+        }
+    }
+    &__logo {
+        &:hover {
+            opacity: 0.8;
+        }
+        &:active {
+            opacity: 0.6;
+        }
+        @include tablet {
+            width: 173px;
+            height: 59px;
+        }
+        @include mobile {
+            content: url(../../../img/logo-mobile.svg);
+            width: 33px;
+            height: 38px;
+            padding-left: 20px;
         }
     }
 }
