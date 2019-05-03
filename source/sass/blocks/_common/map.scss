@@ -18,7 +18,7 @@
             min-height: 400px;
         }
         @include mobile {
-            margin-top: 30px;
+            margin-top: 0px;
             min-height: 360px;
         }
     }
@@ -26,9 +26,10 @@
 
 .map__adress {
     &-container {
-        display: flex;
         position: relative;
         z-index: 1;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
         width: 570px;
         box-sizing: border-box;
@@ -36,9 +37,11 @@
         background: $white;
         @include tablet {
             width: auto;
-            justify-content: space-between;
-            padding: 0px;
+            padding: 0px 40px;
             margin: 0px;
+        }
+        @include mobile {
+            padding: 30px 0px;
         }
         &--grey {
             @include mobile {
@@ -47,25 +50,34 @@
         }
     }
     &-wrapper {
+        display: flex;
+        flex-direction: column;
         font: $desc;
+        line-height: 20px;
         @include tablet {
-            display: flex;
             flex-wrap: wrap;
-            justify-content: flex-end;
+            text-align: right;
         }
         @include mobile {
             font-size: 14px;
-            line-height: 20px;
-            justify-content: flex-start;
+            text-align: left;
         }
     }
     &-title {
+        margin: 0;
         text-transform: uppercase;
         font-weight: normal;
+        font-size: 20px;
         line-height: 25px;
         @include mobile {
             font-size: 16px;
             line-height: 20px;
+        }
+    }
+    &-city {
+        margin-top: 16px;
+        @include mobile {
+            margin-top: 0px;
         }
     }
 }
