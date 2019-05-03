@@ -110,6 +110,7 @@
     }
     &__description {
         font: $desc;
+        color: $darkgrey;
         @include tablet {
             width: 330px;
             margin: 0 0 60px 0;

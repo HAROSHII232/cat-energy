@@ -47,12 +47,14 @@
     &__description {
         margin: 0 0 50px 0;
         font: $desc;
+        color: $darkgrey;
     }
 }
 
 @include tablet {
     .advantages {
         position: relative;
+        margin-bottom: 0;
         &__item {
             margin-bottom: 90px;
         }
