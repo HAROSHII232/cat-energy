@@ -124,3 +124,22 @@
         }
     }
 }
+
+.main-nav__item--active-catalog {
+    position: relative;
+    &::before {
+        content: '';
+        width: 170px;
+        height: 2px;
+        background: $green;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        @include mobile {
+            display: none;
+        }
+    }
+    a:hover {
+        opacity: 1;
+    }
+}

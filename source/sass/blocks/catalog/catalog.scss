@@ -1,33 +1,82 @@
 .catalog {
+    @include mobile {
+        width: 100%;
+        padding: 0;
+    }
+    &__title {
+        margin: 85px 0 0 0;
+        @include tablet {
+            margin: 65px 0 15px 0;
+        }
+        @include mobile {
+            padding-left: 20px;
+            margin: 10px 0 30px 0;
+        }
+    }
     &__list {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
     &__item {
+        position: relative;
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
         width: 245px;
-        padding: 165px 43px 40px;
-        margin-top: 145px;
+        padding: 165px 40px 40px;
+        margin-top: 140px;
         background: $grey;
         @include tablet {
             width: 324px;
+            padding: 165px 37px 40px 38px;
         }
         @include mobile {
+            width: 100%;
             background: $white;
-            padding: 0;
+            padding: 25px 20px 0px 20px;
             margin: 0 0 25px 0;
+            border-top: 1px solid #ededed;
+        }
+        &-image {
+            position: absolute;
+            left: 0;
+            top: -45px;
+            @include tablet {
+                left: 40px;
+            }
+            @include mobile {
+                left: 27px;
+                top: 37px;
+            }
+            &--small {
+                @include mobile {
+                    width: 120px;
+                    height: 80px;
+                }
+            }
+            &--big {
+                top: -75px;
+                @include mobile {
+                    top: 33px;
+                    width: 130px;
+                    height: 105px;
+                }
+            }
         }
         &-name {
+            width: 140px;
+            align-self: center;
+            margin: 0 0 30px 0;
             font: normal 20px/20px $regular;
             text-transform: uppercase;
             text-align: center;
             @include mobile {
+                width: 80px;
+                padding-left: 80px;
+                margin: 0 0 5px 0;
                 text-align: left;
                 font-size: 16px;
-                padding: 0 65px 0 140px;
             }
         }
         &-name:last-child {
@@ -45,18 +94,42 @@
             &--row {
                 display: flex;
                 justify-content: space-between;
+                padding: 8px 0;
+                border-bottom: 1px solid #cdcdcd;
+                @include mobile {
+                    padding: 0;
+                    border: none;
+                }
             }
         }
         &-button {
             font: normal 16px/20px $regular;
-            padding: 15px 55px;
+            padding: 10px 20px;
             margin-top: 30px;
+            &:hover {
+                background: #5eaa2f;
+            }
+            &:active {
+                color: #8fc46e
+            }
+            @include mobile {
+                margin-top: 24px;
+                padding: 10px 20px;
+            }
             &--show {
+                width: 100%;
                 color: $darkgrey;
-                padding: 15px 33px;
+                padding: 10px 33px;
                 background: $grey;
+                &:hover {
+                    background: #ebebeb;
+                }
+                &:active {
+                    color: rgba(0, 0, 0, .3);
+                }
                 @include mobile {
                     width: 100%;
+                    margin-bottom: 25px;
                 }
             }
         }
@@ -65,14 +138,44 @@
             color: $darkgrey;
         }
         &-other {
+            position: relative;
             text-align: center;
             align-items: center;
             background: $white;
             border: 1px solid #ededed;
             .catalog__item-name {
                 @include mobile {
-                    padding: 80px 0 0 0;
+                    width: 205px;
+                    padding: 60px 0 0 0;
                 }
+            }
+            .catalog__item-text {
+                width: 170px;
+                margin: 10px 0 65px 0;
+                @include mobile {
+                    width: 225px;
+                    font-size: 12px;
+                    margin-bottom: 0px;
+                }
+            }
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                top: 80px;
+                left: 50%;
+                width: 60px;
+                height: 2px;
+                margin-left: -30px;
+                background: #d3d3d3;
+                @include mobile {
+                    top: 40px;
+                    width: 30px;
+                    margin-left: -15px;
+                }
+            }
+            &::after {
+                transform: rotate(90deg);
             }
         }
     }
