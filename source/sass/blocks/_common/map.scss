@@ -46,6 +46,9 @@
                 padding-top: 65px;
                 background: $grey;
             }
+            @include mobile {
+                padding-top: 30px;
+            }
         }
     }
     &-wrapper {
