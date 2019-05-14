@@ -37,10 +37,12 @@
 
         <h1 class="visually-hidden">Cat Energy</h1>
 
-        <section class="programm container container__form--tablet">
+        <div class="programm container container__form--tablet">
             <h2 class="title programm__title">Подбор программы</h2>
             <p class="programm__subtitle">Заполните анкету и мы подберем <br> программу питания для вашего кота</p>
-            <form class="programm__form" action="https://echo.htmlacademy.ru" method="GET">
+        </div>
+        <form class="programm__form" action="https://echo.htmlacademy.ru" method="GET">
+            <section class="programm container container__form--tablet">
                 <div class="programm__container">
                     <fieldset class="programm__data">
                         <div class="programm__data-row">
@@ -71,56 +73,66 @@
                         </label>
                     </fieldset>
                 </div>
-                <fieldset class="programm__contacts">
-                    <legend class="subtitle programm__legend">Контактные данные (владельца кота)</legend>
-                    <div class="programm__container">
-                        <div class="programm__data-row ">
-                            <label for="email">E-mail:*</label>
-                            <input class="programm__input programm__contacts-email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
-                        </div>
-                        <div class="programm__data-row">
-                            <label for="phone">Телефон:*</label>
-                            <input class="programm__input programm__contacts-phone" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90">
-                        </div>
+            </section>
+            <fieldset class="programm__contacts">
+                <h2 class="subtitle programm__legend">
+                    <span>Контактные данные<br>(владельца кота)</span>
+                </h2>
+                <div class="programm__container container container__form--tablet">
+                    <div class="programm__data-row ">
+                        <label for="email">E-mail:*</label>
+                        <input class="programm__input programm__contacts-email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
                     </div>
-                </fieldset>
-                <fieldset class="programm__comment">
-                    <label class="subtitle programm__legend" for="comment">Комментарий</label>
-                    <textarea class="programm__input--comment" name="comment" id="comment" cols="20" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
-                </fieldset>
-                <fieldset class="programm__additional">
-                    <legend class="subtitle programm__legend">Дополнительно</legend>
-                    <div class="programm__container">
-                        <label class="programm__additional-checkbox">
+                    <div class="programm__data-row">
+                        <label for="phone">Телефон:*</label>
+                        <input class="programm__input programm__contacts-phone" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="programm__comment ">
+                <h2 class="subtitle programm__legend">
+                    <span>Комментарий</span>
+                </h2>
+                <div class="container container__form--tablet">
+                    <textarea class="programm__input--comment" name="comment" cols="20" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+                </div>
+            </fieldset>
+            <fieldset class="programm__additional">
+                <h2 class="subtitle programm__legend">
+                    <span>Дополнительно</span>
+                </h2>
+                <div class="programm__container container container__form--tablet">
+                    <label class="programm__additional-checkbox">
                             <input type="checkbox" name="additional" value="sugar-substitute" checked>
                             <span class="programm__additional-checkbox-label">Сахарозаменитель</span>
+                </label>
+                    <label class="programm__additional-checkbox">
+                            <input type="checkbox" name="additional" value="drink-water" >
+                            <span class="programm__additional-checkbox-label">Питьевая вода</span>
+                </label>
+                    <label class="programm__additional-checkbox">
+                            <input type="checkbox" name="additional" value="milk" >
+                            <span class="programm__additional-checkbox-label">Молоко</span>
                         </label>
-                        <label class="programm__additional-checkbox">
-                            <input type="checkbox" name="additional" value="sugar-substitute" >
-                            <span class="programm__additional-checkbox-label">Сахарозаменитель</span>
-                        </label>
-                        <label class="programm__additional-checkbox">
-                            <input type="checkbox" name="additional" value="sugar-substitute" >
-                            <span class="programm__additional-checkbox-label">Сахарозаменитель</span>
-                        </label>
-                        <label class="programm__additional-checkbox">
-                            <input type="checkbox" name="additional" value="sugar-substitute" >
-                            <span class="programm__additional-checkbox-label">Сахарозаменитель</span>
-                        </label>
-                    </div>
-                </fieldset>
-                <button class="button programm__form-button" type="submit">Отправить заявку</button>
-                <span class="notice">* — Обязательные поля</span>
-            </form>
-        </section>
-
-        <section class="map map--grey ">
-            <h2 class="visually-hidden">Карта</h2>
+                    <label class="programm__additional-checkbox">
+                            <input type="checkbox" name="additional" value="vitamins" >
+                            <span class="programm__additional-checkbox-label">Витамины</span>
+               </label>
+                </div>
+            </fieldset>
             <div class="container container__form--tablet">
+                <button class="button programm__form-button" type="submit">Отправить заявку</button>
+                <span class="programm__notice">* — Обязательные поля</span>
+            </div>
+        </form>
+
+        <section class="map map--grey">
+            <h2 class="visually-hidden">Карта</h2>
+            <div class="container">
                 <div class="map__adress-container map__adress-container--grey">
-                    <h3 class="map__adress-title">приглашаем к сотрудничеству дилеров!</h3>
+                    <h3 class="map__adress-title">приглашаем <br> к сотрудничеству <br> дилеров!</h3>
                     <div class="map__adress-wrapper">
-                        <span class="map__adress-street">ул. Большая Конюшенная, д. 19/8 </span>
+                        <span class="map__adress-street">ул. Большая <br> Конюшенная, д. 19/8 </span>
                         <span class="map__adress-city">Санкт-Петербург</span>
                     </div>
                 </div>

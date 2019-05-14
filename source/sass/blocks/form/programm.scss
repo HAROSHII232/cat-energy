@@ -1,4 +1,9 @@
 .programm {
+    &__form {
+        @include mobile {
+            margin-bottom: 31px;
+        }
+    }
     @include mobile {
         font-size: 16px;
         line-height: 18px;
@@ -9,10 +14,6 @@
         justify-content: space-between;
         text-transform: uppercase;
         color: #222222;
-        margin-bottom: 70px;
-        @include mobile {
-            margin-bottom: 31px;
-        }
     }
     &__title {
         margin: 81px 0 53px 0;
@@ -35,9 +36,37 @@
         }
     }
     &__legend {
-        margin-bottom: 70px;
+        margin: 72px 0;
+        padding: 0 calc((100vw - 1300px)/2);
+        background-image: linear-gradient(to bottom, transparent 0, transparent 22px, #68b738 22px, #68b738 25px, transparent 25px, transparent 100%);
+        span {
+            padding: 0 33px;
+            background-color: #fff;
+            br {
+                display: none;
+            }
+            @include tablet {
+                margin-top: 79px;
+                margin-bottom: 70px;
+            }
+            @include mobile {
+                br {
+                    display: block;
+                }
+                display: table;
+                vertical-align: middle;
+                padding: 4px 22px;
+                margin-top: 30px;
+                margin-bottom: 31px;
+                line-height: 33px
+            }
+        }
+        @include tablet {
+            padding: 0 calc((100vw - 708px)/2);
+        }
         @include mobile {
-            margin-bottom: 31px;
+            margin-top: 5px;
+            margin-bottom: 30px;
         }
     }
     &__data {
@@ -84,7 +113,7 @@
         }
         @include mobile {
             margin-left: 0px;
-            padding: 10px 13px;
+            padding: 10px 6px;
         }
     }
     &__objective {
@@ -152,16 +181,22 @@
             opacity: 0.3
         }
     }
+    &__contacts {
+        .programm__data-row {
+            margin-bottom: 0;
+            @include tablet {
+                &:first-child {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
     &__contacts label,
-    &__additional span {
+    &__additional-checkbox span {
         text-transform: uppercase;
         color: #222222;
-    }
-    &__comment {
-        display: flex;
-        margin-bottom: 70px;
         @include mobile {
-            margin-bottom: 31px;
+            font-size: 16px;
         }
     }
     &__input--comment {
@@ -171,6 +206,9 @@
         padding: 17px 20px;
         text-transform: uppercase;
         resize: none;
+        @include mobile {
+            font-size: 15px;
+        }
     }
     &__additional-checkbox {
         width: 245px;
@@ -182,27 +220,38 @@
             margin-bottom: 32px;
         }
     }
-    .notice {
-        font: normal 16px/16px $arial;
-        @include mobile {
-            display: block;
-            text-align: center;
-            margin: 20px 0;
-        }
-    }
     &__form-button {
         width: 570px;
-        font: normal 20px/20px $regular;
-        padding: 20px 0;
+        margin: 61px 82px 82px 0;
+        padding: 18px 0;
         border: none;
         cursor: pointer;
-        margin: 0 82px 82px 0;
+        font: normal 20px/20px $regular;
+        &:hover {
+            background: #5eaa2f;
+        }
+        &:active {
+            color: #8fc46e
+        }
         @include tablet {
             width: 283px;
         }
         @include mobile {
             width: 100%;
-            margin: 0
+            margin: 0;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    }
+    &__notice {
+        font: normal 16px/16px $arial;
+        @include mobile {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin: 20px 0;
+            margin: 0 auto
         }
     }
 }
