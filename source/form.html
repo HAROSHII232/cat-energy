@@ -13,20 +13,20 @@
 
     <header class="page-header">
         <div class="container page-header__wrapper">
-            <a href="page-header__logo">
-                <img class="page-header__logo--image" src="img/logo-desktop.svg" width="202" height="59" alt="Логотип Cat energy">
+            <a href="index.html">
+                <img class="page-header__logo" src="img/logo-desktop.svg" width="202" height="59" alt="Логотип Cat energy">
             </a>
-            <nav class="main-nav">
-                <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
+            <nav class="main-nav main-nav--closed">
+                <button class="main-nav__toggle  " type="button"><span class="visually-hidden">Открыть меню</span></button>
                 <ul class="main-nav__list ">
                     <li class="main-nav__item ">
-                        <a class="main-nav__link" href="index.html">Главная</a>
+                        <a class="main-nav__link " href="index.html">Главная</a>
                     </li>
                     <li class="main-nav__item">
-                        <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+                        <a class="main-nav__link " href="catalog.html">Каталог продукции</a>
                     </li>
-                    <li class="main-nav__item main-nav__item--active ">
-                        <a class="main-nav__link" href="#">Подбор программы</a>
+                    <li class="main-nav__item main-nav__item--active-catalog">
+                        <a class="main-nav__link " href="#">Подбор программы</a>
                     </li>
                 </ul>
             </nav>
@@ -48,26 +48,26 @@
                             <input class="programm__input programm__data-input--text" type="text" id="name" name="name" placeholder="Барсик">
                         </div>
                         <div class="programm__data-row">
-                            <label for="name">Имя:* </label>
-                            <input class="programm__input programm__data-input--text" type="text" id="name" name="name" placeholder="Барсик">
+                            <label for="weight">Вес (кг):* </label>
+                            <input class="programm__input programm__data-input--text" type="text" id="weight" name="weight" placeholder="7">
                         </div>
                         <div class="programm__data-row">
-                            <label for="name">Имя:* </label>
-                            <input class="programm__input programm__data-input--text" type="text" id="name" name="name" placeholder="Барсик">
+                            <label for="age">Возраст (лет): </label>
+                            <input class="programm__input programm__data-input--text" type="text" id="age" name="age" placeholder="7">
                         </div>
                     </fieldset>
                     <fieldset class="programm__objective">
                         <label class="programm__objective-radio">
-                            <input type="radio" name="objective" value="losing-weight" checked>
+                            <input class="visually-hidden" type="radio" name="objective" value="losing-weight" checked>
                             <span class="programm__objective-radio--label">Похудение</span>
                         </label>
                         <label class="programm__objective-radio">
-                            <input type="radio" name="objective" value="losing-weight" checked>
-                            <span class="programm__objective-radio--label">Похудение</span>
+                            <input class="visually-hidden" type="radio" name="objective" value="weight-gain" >
+                            <span class="programm__objective-radio--label">Набор массы</span>
                         </label>
                         <label class="programm__objective-radio">
-                            <input type="radio" name="objective" value="losing-weight" checked>
-                            <span class="programm__objective-radio--label">Похудение</span>
+                            <input class="visually-hidden " type="radio" name="objective" value="recommendation" >
+                            <span class="programm__objective-radio--label">Не знаю (Нужен ваш совет)</span>
                         </label>
                     </fieldset>
                 </div>
