@@ -1,25 +1,168 @@
 .example {
     background: $grey;
+    padding-bottom: 75px;
+    .container {
+        display: flex;
+    }
+    &__content {
+        width: 430px;
+    }
+    &__title {
+        margin: 0;
+        position: relative;
+        top: -140px;
+    }
     &__description {
+        margin: 30px 0 70px 0;
         font: $desc;
+        color: $darkgrey;
+    }
+    &__achivments {
+        display: flex;
+        margin-bottom: 60px;
     }
     &__cost {
+        margin: 0;
         text-transform: uppercase;
         font-weight: 400;
     }
 }
 
 .achivment {
+    position: relative;
+    width: 160px;
+    margin: 0 40px 0 0;
+    padding: 20px 0;
+    border: 1px solid #cdcdcd;
+    text-align: center;
     &__value {
+        margin-left: 0;
         font-size: 30px;
         line-height: 37px;
         font-weight: 400;
         text-transform: uppercase;
     }
     &__title {
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 8px;
+        background: $grey;
         font-family: $arial;
         font-size: 14px;
         line-height: 14px;
         color: $darkgrey;
+        white-space: nowrap;
+    }
+}
+
+.slider {
+    &__images {
+        width: 650xp;
+    }
+}
+
+@include tablet {
+    .example {
+        background: $white;
+        &__title {
+            position: static;
+        }
+        &__row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 190px;
+        }
+        .container {
+            width: 100%;
+            padding: 0;
+            flex-direction: column;
+        }
+        &__content {
+            width: auto;
+            padding: 0 $tablet-pads;
+        }
+        &__description {
+            margin: 60px 30px 56px 0;
+            font: $desc;
+        }
+        &__cost {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-top: 13px;
+            &-amount {
+                margin-top: 10px;
+            }
+        }
+    }
+    .achivment {
+        &__title {
+            background: $white;
+        }
+    }
+    .slider {
+        width: 100%;
+        background: $grey;
+        min-height: 460px;
+    }
+}
+
+@include mobile {
+    .example {
+        background: $grey;
+        padding-bottom: 0;
+        &__title {
+            position: static;
+            margin: 35px 0;
+        }
+        &__description {
+            margin: 0px 0px 27px 0;
+            font-size: 14px;
+            line-height: 18px;
+            color: $darkgrey;
+        }
+        &__achivments {
+            margin-bottom: 38px;
+        }
+        &__row {
+            flex-direction: column;
+            align-items: stretch;
+            margin-bottom: 0;
+        }
+        &__achivments {
+            justify-content: space-between;
+        }
+        &__cost {
+            flex-direction: row;
+            justify-content: center;
+            margin: 0;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+        }
+    }
+    .achivment {
+        margin-right: 0px;
+        padding: 17px 0;
+        &__value {
+            font-size: 24px;
+            line-height: 30px;
+        }
+        &__title {
+            bottom: -21px;
+            padding: 5px 15px;
+            background: $grey;
+            font-size: 12px;
+            line-height: 12px;
+            white-space: pre-wrap
+        }
+    }
+    .achivment+.achivment {
+        margin-left: 20px;
+    }
+    .slider {
+        min-height: 380px;
     }
 }
