@@ -117,17 +117,29 @@
         width: 245px;
         padding-top: 175px;
         background: url(../../../img/gift-photo-desktop@1x.jpg) center center no-repeat;
+        background-size: cover;
+        @include retina {
+            background-image: url(../../../img/gift-photo-desktop@2x.jpg);
+        }
         @include tablet {
             width: 100%;
             padding-top: 0;
             margin-top: 60px;
+            margin-bottom: 30px;
             background: url(../../../img/gift-photo-tablet@1x.jpg) center center no-repeat;
+            background-size: cover;
+            @include retina {
+                background-image: url(../../../img/gift-photo-tablet@2x.jpg);
+            }
         }
         @include mobile {
-            width: 280px;
-            margin-top: 0px;
+            height: 289px;
+            margin-top: 40px;
             background: url(../../../img/gift-photo-mobile@1x.jpg) center center no-repeat;
-            min-height: 290px;
+            background-size: cover;
+            @include retina {
+                background-image: url(../../../img/gift-photo-mobile@2x.jpg);
+            }
         }
         &::before {
             content: '';
@@ -143,7 +155,7 @@
                 left: 18%;
             }
             @include mobile {
-                top: 85px;
+                top: 55px;
                 left: 50%;
                 margin-left: -28px;
             }
@@ -160,8 +172,9 @@
                 padding-left: 420px;
             }
             @include mobile {
-                margin-top: 140px;
-                padding-left: 62px;
+                justify-content: center;
+                margin-top: 120px;
+                padding-left: 0px;
                 text-align: center;
             }
         }
