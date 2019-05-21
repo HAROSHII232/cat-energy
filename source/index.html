@@ -15,7 +15,11 @@
     <header class="page-header page-header--index">
         <div class="container page-header__wrapper">
             <a>
-                <img class="page-header__logo" src="img/logo-desktop.svg" width="202" height="59" alt="Логотип Cat energy">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
+                    <source media="(max-width: 1299px)" srcset="img/logo-tablet.svg">
+                    <img class="page-header__logo" src="img/logo-desktop.svg" width="202" height="59" alt="Логотип Cat energy">
+                </picture>
             </a>
             <nav class="main-nav main-nav--closed">
                 <button class="main-nav__toggle  " type="button"><span class="visually-hidden">Открыть меню</span></button>
