@@ -42,25 +42,18 @@
             position: absolute;
             left: 0;
             top: -45px;
-            @include tablet {
-                left: 40px;
-            }
+            width: 100%;
             @include mobile {
-                left: 27px;
-                top: 37px;
-            }
-            &--small {
-                @include mobile {
-                    width: 120px;
-                    height: 80px;
-                }
+                width: auto;
+                left: 20px;
+                top: 0;
             }
             &--big {
                 top: -75px;
                 @include mobile {
-                    top: 33px;
-                    width: 130px;
-                    height: 105px;
+                    width: auto;
+                    left: 20px;
+                    top: 0;
                 }
             }
         }
