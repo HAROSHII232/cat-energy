@@ -81,6 +81,7 @@
         }
     }
     &__data-row {
+        position: relative;
         display: flex;
         align-items: center;
         width: 570px;
@@ -191,10 +192,9 @@
             }
         }
         &-email {
-            background: url(../../../img/icon-mail.svg) 449px center no-repeat;
-            background-size: 18px;
+            position: absolute;
+            right: 15px;
             opacity: 0.8;
-            border: 1px solid #cdcdcd;
             @include tablet {
                 background-position-x: 510px
             }
@@ -203,10 +203,9 @@
             }
         }
         &-phone {
-            background: url(../../../img/icon-phone.svg) 433px center no-repeat;
-            background-size: 20px;
+            position: absolute;
+            right: 15px;
             opacity: 0.8;
-            border: 1px solid #cdcdcd;
             @include tablet {
                 background-position-x: 490px
             }
