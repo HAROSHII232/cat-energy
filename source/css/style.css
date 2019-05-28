@@ -120,10 +120,12 @@ fieldset {
       left: 50%;
       z-index: -1;
       background: url(../../../img/index-background-desktop@1x.jpg) left center no-repeat;
+      background-color: #68b738;
       background-size: cover; }
       @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
         .page-header--index::before {
-          background-image: url(../../../img/index-background-desktop@2x.jpg); } }
+          background-image: url(../../../img/index-background-desktop@2x.jpg);
+          background-color: #68b738; } }
       @media (max-width: 1299px) {
         .page-header--index::before {
           display: none; } }
@@ -1354,10 +1356,12 @@ fieldset {
     width: 245px;
     padding-top: 175px;
     background: url(../../../img/gift-photo-desktop@1x.jpg) center center no-repeat;
+    background-color: #68b738;
     background-size: cover; }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       .additional-goods__gift {
-        background-image: url(../../../img/gift-photo-desktop@2x.jpg); } }
+        background-image: url(../../../img/gift-photo-desktop@2x.jpg);
+        background-color: #68b738; } }
     @media (max-width: 1299px) {
       .additional-goods__gift {
         width: 100%;
@@ -1365,6 +1369,7 @@ fieldset {
         margin-top: 60px;
         margin-bottom: 30px;
         background: url(../../../img/gift-photo-tablet@1x.jpg) center center no-repeat;
+        background-color: #68b738;
         background-size: cover; } }
   @media (max-width: 1299px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1299px) and (min-resolution: 144dpi), (max-width: 1299px) and (min-resolution: 1.5dppx) {
     .additional-goods__gift {
@@ -1374,10 +1379,12 @@ fieldset {
         height: 289px;
         margin-top: 40px;
         background: url(../../../img/gift-photo-mobile@1x.jpg) center center no-repeat;
+        background-color: #68b738;
         background-size: cover; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .additional-goods__gift {
-      background-image: url(../../../img/gift-photo-mobile@2x.jpg); } }
+      background-image: url(../../../img/gift-photo-mobile@2x.jpg);
+      background-color: #68b738; } }
     .additional-goods__gift::before {
       content: '';
       width: 55px;

@@ -117,9 +117,11 @@
         width: 245px;
         padding-top: 175px;
         background: url(../../../img/gift-photo-desktop@1x.jpg) center center no-repeat;
+        background-color: $green;
         background-size: cover;
         @include retina {
             background-image: url(../../../img/gift-photo-desktop@2x.jpg);
+            background-color: $green;
         }
         @include tablet {
             width: 100%;
@@ -127,6 +129,7 @@
             margin-top: 60px;
             margin-bottom: 30px;
             background: url(../../../img/gift-photo-tablet@1x.jpg) center center no-repeat;
+            background-color: $green;
             background-size: cover;
             @include retina {
                 background-image: url(../../../img/gift-photo-tablet@2x.jpg);
@@ -136,9 +139,11 @@
             height: 289px;
             margin-top: 40px;
             background: url(../../../img/gift-photo-mobile@1x.jpg) center center no-repeat;
+            background-color: $green;
             background-size: cover;
             @include retina {
                 background-image: url(../../../img/gift-photo-mobile@2x.jpg);
+                background-color: $green;
             }
         }
         &::before {
