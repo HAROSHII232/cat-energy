@@ -145,8 +145,14 @@
     }
     .slider {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         background: $grey;
         min-height: 460px;
+        &__actions {
+            margin-top: 20px;
+        }
     }
 }
 
@@ -205,5 +211,27 @@
     }
     .slider {
         min-height: 380px;
+        &__image {
+            margin-top: 50px;
+        }
+        &__scale {
+            box-sizing: border-box;
+            width: 85px;
+            height: 16px;
+            padding: 4px 6px;
+            background-color: #fff;
+        }
+        &__button {
+            font-size: 16px;
+        }
+        &__grip {
+            position: static;
+            width: 35px;
+            height: 6px;
+            background-image: none;
+            background-color: #68b738;
+            border-radius: 3px;
+            margin-left: 0;
+        }
     }
 }

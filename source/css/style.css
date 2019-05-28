@@ -303,6 +303,9 @@ fieldset {
   position: relative;
   padding: 100px 0; }
   @media (max-width: 1299px) {
+    .map {
+      padding: 0; } }
+  @media (max-width: 1299px) {
     .map--grey {
       background: #f2f2f2;
       padding: 0px; } }
@@ -960,8 +963,20 @@ fieldset {
     background: #ffffff; }
   .slider {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     background: #f2f2f2;
-    min-height: 460px; } }
+    min-height: 460px; }
+    .slider__actions {
+      margin-top: 20px; } }
 
 @media (max-width: 767px) {
   .example {
@@ -1018,7 +1033,26 @@ fieldset {
   .achivment + .achivment {
     margin-left: 20px; }
   .slider {
-    min-height: 380px; } }
+    min-height: 380px; }
+    .slider__image {
+      margin-top: 50px; }
+    .slider__scale {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 85px;
+      height: 16px;
+      padding: 4px 6px;
+      background-color: #fff; }
+    .slider__button {
+      font-size: 16px; }
+    .slider__grip {
+      position: static;
+      width: 35px;
+      height: 6px;
+      background-image: none;
+      background-color: #68b738;
+      border-radius: 3px;
+      margin-left: 0; } }
 
 @media (max-width: 767px) {
   .catalog {
