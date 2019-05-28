@@ -289,6 +289,10 @@ fieldset {
   .button__intro {
     display: block;
     padding: 15px 30px; }
+    .button__intro:hover, .button__intro:active {
+      background: #5eaa2f; }
+    .button__intro:active {
+      color: rgba(216, 235, 55, 0.8); }
     @media (max-width: 767px) {
       .button__intro {
         width: 100%;

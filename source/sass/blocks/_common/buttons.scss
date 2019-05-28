@@ -7,6 +7,13 @@
     &__intro {
         display: block;
         padding: 15px 30px;
+        &:hover,
+        &:active {
+            background: #5eaa2f;
+        }
+        &:active {
+            color: rgba(216, 235, 55, 0.8)
+        }
         @include mobile {
             width: 100%;
             font-size: 14px;
