@@ -3,6 +3,7 @@
     padding-bottom: 75px;
     .container {
         display: flex;
+        justify-content: space-between;
     }
     &__content {
         width: 430px;
@@ -58,8 +59,48 @@
 }
 
 .slider {
-    &__images {
-        width: 650xp;
+    width: 650px;
+    &__image {
+        margin-top: -200px;
+    }
+    &__actions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+    }
+    &__button {
+        margin: 0 20px;
+        padding: 6px 0;
+        border-bottom: 1px dotted rgba(0, 0, 0, .3);
+        text-align: center;
+        font-size: 20px;
+        color: #111;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    &__scale {
+        position: relative;
+        width: 428px;
+        height: 6px;
+        padding: 4px 0;
+        background-color: #cdcdcd;
+        border: 1px solid #cdcdcd;
+        border-radius: 6px;
+        box-sizing: border-box;
+    }
+    &__grip {
+        position: absolute;
+        top: -12px;
+        box-sizing: border-box;
+        width: 34px;
+        height: 34px;
+        margin-left: calc(50% - 17px);
+        background-image: radial-gradient(#68b738 0, #68b738 4px, #fff 5px, #fff 100%);
+        border: 1px solid #cdcdcd;
+        border-radius: 50%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .15);
+        cursor: pointer;
     }
 }
 
